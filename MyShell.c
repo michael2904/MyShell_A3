@@ -15,13 +15,14 @@ int main(int argc, const char * argv[]) {
     char *prompt = "Donde esta la bibliotheca";
 
     while(1){
-        printf("%s -->",prompt);
+        printf("%s --> ",prompt);
         char entry[200];
         char lEntry[200];
         fgets(entry,200,stdin);
         char *temp=strtok(entry,"\n");
-        
-        for(int i = 0; entry[i]; i++){
+        int i;
+
+        for(i = 0; entry[i]; i++){
             lEntry[i] = tolower(entry[i]);
         }
 
