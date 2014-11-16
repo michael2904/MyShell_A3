@@ -1,6 +1,6 @@
-myShell: myShell.o
-	gcc -o myShell myShell.o
-myShell.o: myShell.c
-	gcc -c myShell.c
+MyShell: MyShell.o
+	gcc -o MyShell MyShell.o
+MyShell.o: MyShell.c
+	gcc -c MyShell.c
 clean:
 	rm -f *.o
