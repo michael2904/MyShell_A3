@@ -23,10 +23,15 @@ int main(int argc, const char * argv[]) {
         char lEntry[200];
 //get the entry
         fgets(entry,200,stdin);
+<<<<<<< Updated upstream
 //take out the new line
 	 char *temp=strtok(entry,"\n");
         int i;
 //turn to lowercase
+=======
+        char *temp=strtok(entry,"\n");
+        int i;
+>>>>>>> Stashed changes
         for(i = 0; entry[i]; i++){
             lEntry[i] = tolower(entry[i]);
         }
